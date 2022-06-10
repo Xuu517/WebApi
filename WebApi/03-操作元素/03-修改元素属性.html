@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    img{
+      width: 300px;
+    }
+  </style>
+</head>
+<body>
+  <button id="1">connect 1</button>
+  <button id="0">connect 0</button>
+  <img src="../img/concept 0.jpg" alt="" title="明星">
+
+  <script>
+    //修改元素属性
+    //1.获取元素
+    var one=document.getElementById('1');
+    var zero=document.getElementById('0');
+    var img=document.querySelector('img');
+
+    //2.注册事件 处理程序·
+    one.onclick=function(){
+        img.src='../img/connect 1.jpg';
+        img.title='概念1';
+    }
+
+    zero.onclick=function(){
+      img.src='../img/concept 0.jpg';
+      img.title='概念0';
+    }
+
+  </script>
+  
+</body>
+</html>

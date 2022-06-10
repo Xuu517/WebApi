@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div></div>
+  <p>
+    我真的很喜欢Rosie
+    <span>不回归</span>
+  </p>
+  <script>
+    //innertext与innerHTML的区别
+    //1.innertext不识别html标签 非标准 去除空格和换行
+    var div=document.querySelector('div');//标签属性 选择器必须加引号
+    div.innerText='<strong>今天</strong>Jennie染橘色头发了';
+    //innerHTML识别html标签 w3c
+    div.innerHTML='<strong>今天</strong>Jennie染橘色头发了';
+    
+    //这两个属性是可读写的
+    var p=document.querySelector('p');
+    console.log(p.innerText);//
+
+
+  </script>
+  
+</body>
+</html>

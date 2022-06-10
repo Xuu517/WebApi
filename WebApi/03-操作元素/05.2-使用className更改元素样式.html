@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div{
+      width: 100px;
+      height: 100px;
+      background-color: pink;
+    }
+
+    .change{
+      background-color: purple;
+      width: 20px;
+      height: 10px;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="first">文本</div>
+
+  <script>
+    var div=document.querySelector('div');
+    div.onclick=function(){
+      //当前元素类名等于change 覆盖原先类名
+      // this.className='change';
+      //如果想不覆盖 原先的类也保留了，有其他的用处
+      this.className='first change';
+    }
+  </script>
+  
+</body>
+</html>
